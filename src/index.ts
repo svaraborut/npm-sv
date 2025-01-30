@@ -1,4 +1,6 @@
-const dataFruits = `🍇🍈🍉🍊🍋🍌🍍🥭🍎🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥`
+// spread operator (...) is needed to correctly divide surrogate unicode pairs
+// as split() or array accessor [] will not work.
+const dataFruits = [...`🍇🍈🍉🍊🍋🍌🍍🥭🍎🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥`]
 
 /**
  * Pick a random element from an array like object (array or string)
