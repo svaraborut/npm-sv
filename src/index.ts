@@ -3,12 +3,26 @@
 const dataFruits = [...`🍇🍈🍉🍊🍋🍌🍍🥭🍎🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥`]
 
 /**
+ * Generate an integer bound random number [min, max)
+ */
+export function intRandom(max: number, min: number = 0) {
+    return Math.floor(Math.random() * (max - min)) + min
+}
+
+/**
  * Pick a random element from an array like object (array or string)
  * WARNING: It is not cryptographically secure
  */
 export function pick<T>(data: ArrayLike<T>): T {
-    const id = Math.min(Math.floor(Math.random() * data.length), data.length - 1)
-    return data[id]
+    return data[intRandom(data.length)]
+}
+
+/**
+ * Pick many random elements from an array
+ * WARNING: It is not cryptographically secure
+ */
+export function pickMany<T>(data: ArrayLike<T>, length: number): T[] {
+    return new Array(length).fill(null).map(() => pick(data))
 }
 
 /**
@@ -16,4 +30,12 @@ export function pick<T>(data: ArrayLike<T>): T {
  */
 export function fruit() {
     return pick(dataFruits)
+}
+
+/**
+ * Provide a random string of fruit emojis
+ */
+export function fruitSalad(length?: number) {
+    length = length ?? intRandom(10, 1)
+    return pickMany(dataFruits, length).join('')
 }

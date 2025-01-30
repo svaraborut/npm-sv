@@ -48,11 +48,14 @@ Dummy library documentation. Not intended for production use.
 Generate a random fruit emoji
 
 ```typescript
-import { fruit } from 'npmsemver'
+import { fruit, fruitSalad } from '@svara/npmsemver'
 
 fruit() // -> 🍊
+
+fruitSalad() // -> 🥝🫐🫒🍊🍇🍍
 ```
 
 ## Todo
 
 - How to [move index.html](https://stackoverflow.com/questions/71295772) to `demo`
+- Publish `index.html` to GitHub pages
