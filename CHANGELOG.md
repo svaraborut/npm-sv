@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/svaraborut/npmsemver/compare/v1.0.0...v1.1.0) (2025-01-30)
+
+
+### Features
+
+* add animals [#1](https://github.com/svaraborut/npmsemver/issues/1) ([beb8b8e](https://github.com/svaraborut/npmsemver/commit/beb8b8eadf542938427fb8569f0350130cef4ee6))
+* add fruit salad ([eb24acc](https://github.com/svaraborut/npmsemver/commit/eb24acc6eaffb22c8ffaeffa3569be62bfb42b55))
+
 # 1.0.0 (2025-01-30)
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@svara/npmsemver",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Experimental package to test release automation",
     "type": "module",
     "module": "dist/index.js",
