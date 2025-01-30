@@ -22,5 +22,6 @@ export default {
         '@semantic-release/changelog',
         ...(process.env.GIT_COMMIT === 'true' ? [gitPlugin] : []),
         '@semantic-release/github',
+        '@semantic-release/npm',
     ],
 }
