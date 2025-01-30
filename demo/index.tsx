@@ -1,4 +1,4 @@
-import { fruit, fruitSalad } from '@/index.ts'
+import { animal, zoo } from '@/index.ts'
 
 document.addEventListener('DOMContentLoaded', function () {
     const button = document.getElementById('button')
@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateButton() {
         if (!button) return
-        const f = fruit()
+        const f = animal()
         console.log(f)
         button.innerHTML = f + ' Click'
 
         // Other updates
-        if (field) field.innerHTML = fruitSalad()
+        if (field) field.innerHTML = zoo()
     }
 
     updateButton()
