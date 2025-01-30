@@ -1,0 +1,28 @@
+name: Main
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+
+permissions:
+    contents: write
+    issues: write
+    pull-requests: write
+
+jobs:
+    publish:
+        runs-on: ubuntu-22.04
+        name: New version
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 22
+            - run: npm ci
+            - run: npm run build
+            - run: npx semantic-release
+              env:
+                  GIT_COMMIT: true
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
