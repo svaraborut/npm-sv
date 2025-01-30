@@ -55,5 +55,5 @@ export function animal() {
  */
 export function zoo(length?: number) {
     length = length ?? intRandom(10, 1)
-    return pickMany(dataFruits, length).join('')
+    return pickMany(dataAnimals, length).join('')
 }
