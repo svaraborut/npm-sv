@@ -2,7 +2,7 @@
 const gitPlugin = [
     '@semantic-release/git',
     {
-        message: 'bot(release): ${nextRelease.version} [skip ci]',
+        message: 'bot(release): released v${nextRelease.version} [skip ci]',
     },
 ]
 
