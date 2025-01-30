@@ -22,3 +22,14 @@
   `1.0.0`. This repository also includes all this [technologies](#technologies)
 - Push to GitHub
 
+## Docs
+
+Dummy library documentation. Not intended for production use.
+
+Generate a random fruit emoji
+
+```typescript
+import { fruit } from 'npm-sv'
+
+fruit() // -> 🍊
+```
