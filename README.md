@@ -6,10 +6,19 @@
 
 ## Steps
 
+### Technologies
+
+- **Typescript**. Configured for modern `ES2020` builds. Provides two import aliases `@` and `@test`
+- **Prettier**. With sane code cleaning defaults and automated import sorting.
+- **Vite**. Configured to build to exclude all the Node builtins, `peerDependencies` and `devDependencies` from the
+  bundle.
+    - `npm run build` to build `src/index.ts` as a library
+    - `npm run dev` to serve the contents of `demo` in development mode for experimentation with the library
+
 ### 1. Prepare the repository
 
 - Create a GitHub repository with a `name` and `description`
 - Prepare the project with `git` and `npm` initialized. Provide `name` `description` and `author`. Version should be
-  `1.0.0`
-- 
+  `1.0.0`. This repository also includes all this [technologies](#technologies)
+- Push to GitHub
 
