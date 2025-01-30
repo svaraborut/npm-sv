@@ -22,6 +22,20 @@
   `1.0.0`. This repository also includes all this [technologies](#technologies)
 - Push to GitHub
 
+### 2. Automation
+
+Versioning is automated via the `semantic-versioning` solution. The configuration is present
+in [.releaserc.mjson](.releaserc.mjs) and is configured with a san default that will:
+
+- Maintain the `CHANGELOG.md` file
+- Automatically manage releases via the `main` branch
+- Automatically manage canary releases via the `canary` branch
+- Handle GitOps. By [default](https://github.com/semantic-release/git) the commit user is `@semantic-release-bot`. The
+  actions are:
+    - Issues mentioned in release commits will receive a comment with the release
+    - Pull requests will receive a comment with the release
+- Update the package version and create a `bot()` commit to bump package when creating a production release
+
 ## Docs
 
 Dummy library documentation. Not intended for production use.
