@@ -1,7 +1,8 @@
-# npm-sv
+# npmsemver
 
 > [!CAUTION]
-> This is an experimental package resulting from [this repo](https://github.com/svaraborut/npm-sv). Its sole purpose is
+> This is an experimental package resulting from [this repo](https://github.com/svaraborut/npmsemver). Its sole purpose
+> is
 > to experiment with semantic versioning and GitHub Action release automation. USE IT AT YOUR OWN DISCRETION.
 
 ## Steps
@@ -43,7 +44,7 @@ Dummy library documentation. Not intended for production use.
 Generate a random fruit emoji
 
 ```typescript
-import { fruit } from 'npm-sv'
+import { fruit } from 'npmsemver'
 
 fruit() // -> 🍊
 ```
