@@ -43,6 +43,13 @@ in [.releaserc.mjson](.releaserc.mjs) and is configured with a san default that 
 
 ## Docs
 
+Actual example of working badges
+
+[![svara.io](https://img.shields.io/badge/by-svara.io-d5278c)](https://svara.io/)
+[![Main](https://github.com/svaraborut/npmsemver/actions/workflows/main.yml/badge.svg)](https://github.com/svaraborut/npmsemver/actions/workflows/main.yml)
+[![NPM Version](https://img.shields.io/npm/v/%40svara%2Fnpmsemver)](https://www.npmjs.com/package/@svara/npmsemver)
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+
 Dummy library documentation. Not intended for production use.
 
 Generate a random fruit emoji
