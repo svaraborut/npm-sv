@@ -33,3 +33,7 @@ import { fruit } from 'npm-sv'
 
 fruit() // -> 🍊
 ```
+
+## Todo
+
+- How to [move index.html](https://stackoverflow.com/questions/71295772) to `demo`
