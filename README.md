@@ -37,6 +37,10 @@ in [.releaserc.mjson](.releaserc.mjs) and is configured with a san default that 
     - Pull requests will receive a comment with the release
 - Update the package version and create a `bot()` commit to bump package when creating a production release
 
+> [!TIP]
+> Order of plugins in the array is important as it denotes the order of execution of the plugins. Which implies that
+`npm` should always precede `github` to prevent the creation of tags and release notes for failed `npm` publishes.
+
 ## Docs
 
 Dummy library documentation. Not intended for production use.

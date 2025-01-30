@@ -20,8 +20,8 @@ export default {
         '@semantic-release/commit-analyzer',
         '@semantic-release/release-notes-generator',
         '@semantic-release/changelog',
+        '@semantic-release/npm',
         ...(process.env.GIT_COMMIT === 'true' ? [gitPlugin] : []),
         '@semantic-release/github',
-        '@semantic-release/npm',
     ],
 }
