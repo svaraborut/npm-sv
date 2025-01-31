@@ -1,6 +1,7 @@
 // spread operator (...) is needed to correctly divide surrogate unicode pairs
 // as split() or array accessor [] will not work.
 const dataFruits = [...`🍇🍈🍉🍊🍋🍌🍍🥭🍎🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥`]
+const dataVegetables = [...`🥑🍆🥔🥕🌽🌶🥒🥬🥦🍄🥜🌰`]
 const dataAnimals = [
     ...`🐨🐯🦁🐮🐷🐽🐵🙈🙉🙊🐒🐔🐧🐦🐤🐣🐥🦆🦅🦉🦇🐺🐗🐴🦄🐝🐛🦋🐌🐞🐜🦟🦗🕷🕸🦂🐢🐍🦎🦖🦕🐅🐆🦓🦍🐘🦛🦏🐪🐫🦒🦘🐃🐂🐄🐎🐖🐏🐑🦙🐐🦌🐕🐩🐈🐓🦃🦚🦜🦢🕊🐇🦝🦡🐁🐀🐿🦔`,
 ]
@@ -72,4 +73,11 @@ export function fish() {
 export function aquarium(length?: number) {
     length = length ?? intRandom(5, 1)
     return pickMany(dataAnimalsWater, length).join('')
+}
+
+/**
+ * Provide a random vegetable
+ */
+export function vegetable() {
+    return pick(dataVegetables)
 }
