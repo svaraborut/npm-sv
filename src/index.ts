@@ -81,3 +81,11 @@ export function aquarium(length?: number) {
 export function vegetable() {
     return pick(dataVegetables)
 }
+
+/**
+ * Provide a random string of vegetables emojis
+ */
+export function salad(length?: number) {
+    length = length ?? intRandom(5, 1)
+    return pickMany(dataVegetables, length).join('')
+}
