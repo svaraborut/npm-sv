@@ -60,19 +60,19 @@ Dummy library documentation. Not intended for production use.
 Generate a random fruit emoji
 
 ```typescript
-import { fruit, fruitSalad, animal, zoo, fish, aquarium } from '@svara/npmsemver'
+import { fruit, fruitSalad, animal, zoo, fish, aquarium, vegetable, salad } from '@svara/npmsemver'
 
 fruit() // -> 🍊
-
 fruitSalad() // -> 🥝🫐🫒🍊🍇🍍
 
 animal() // -> 🦎
-
 zoo() // -> 🐞🦋🐓🐢🦝🐴
 
 fish() // -> 🦀
-
 aquarium() // -> 🐙🦑🦐🦞
+
+vegetable() // -> 🥑
+salad() // -> 🍆🥔🥕🌽🥦
 ```
 
 ## Todo
