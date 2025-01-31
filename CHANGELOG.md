@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/svaraborut/npmsemver/compare/v1.1.0...v1.1.1) (2025-01-31)
+
+
+### Bug Fixes
+
+* remove water animals resolves [#3](https://github.com/svaraborut/npmsemver/issues/3) ([4441844](https://github.com/svaraborut/npmsemver/commit/444184485042c6659de585923d8f69da5e0716c8))
+* zoo function return animals [#2](https://github.com/svaraborut/npmsemver/issues/2) ([bc216a4](https://github.com/svaraborut/npmsemver/commit/bc216a4606259c8c2058fca8f080568c18d3ffe5))
+
 # [1.1.0](https://github.com/svaraborut/npmsemver/compare/v1.0.0...v1.1.0) (2025-01-30)
 
 
