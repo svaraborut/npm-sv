@@ -41,6 +41,11 @@ in [.releaserc.mjson](.releaserc.mjs) and is configured with a san default that 
 > Order of plugins in the array is important as it denotes the order of execution of the plugins. Which implies that
 `npm` should always precede `github` to prevent the creation of tags and release notes for failed `npm` publishes.
 
+## Repo configuration
+
+- Disable `Allow merge commits` in settings
+- Disable `Allow squash merging` in settings
+
 ## Docs
 
 Actual example of working badges
