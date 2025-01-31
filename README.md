@@ -55,7 +55,7 @@ Dummy library documentation. Not intended for production use.
 Generate a random fruit emoji
 
 ```typescript
-import { fruit, fruitSalad, animal, zoo } from '@svara/npmsemver'
+import { fruit, fruitSalad, animal, zoo, fish, aquarium } from '@svara/npmsemver'
 
 fruit() // -> 🍊
 
@@ -64,6 +64,10 @@ fruitSalad() // -> 🥝🫐🫒🍊🍇🍍
 animal() // -> 🦎
 
 zoo() // -> 🐞🦋🐓🐢🦝🐴
+
+fish() // -> 🦀
+
+aquarium() // -> 🐙🦑🦐🦞
 ```
 
 ## Todo

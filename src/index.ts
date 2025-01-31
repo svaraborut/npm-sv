@@ -58,3 +58,18 @@ export function zoo(length?: number) {
     length = length ?? intRandom(10, 1)
     return pickMany(dataAnimals, length).join('')
 }
+
+/**
+ * Provide a random sea animal emoji
+ */
+export function fish() {
+    return pick(dataAnimalsWater)
+}
+
+/**
+ * Provide a random string of sea animal emojis
+ */
+export function aquarium(length?: number) {
+    length = length ?? intRandom(5, 1)
+    return pickMany(dataAnimalsWater, length).join('')
+}
